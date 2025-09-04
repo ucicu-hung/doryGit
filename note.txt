@@ -1,0 +1,63 @@
+git 環境安裝 ->1Windows 2.Mac
+
+安裝 Git 
+//是否安裝成功 git version
+安裝 Github 
+//雲端上管理程式碼 //雲端備份中 //時光機
+安裝 SourceTree 
+安裝 iTerm2
+
+///////////////////////////////
+指令: 
+1移動路徑：cd 路徑
+2回上一層：cd..
+3展開列表：ls
+4開新資料夾：mkdir 資料夾名稱
+5開新檔案：touch 檔案名稱
+
+-----
+Git 環境教學
+git config --global user.name "您的姓名"
+git config --global user.email "您的Email"
+
+git config --list
+
+----
+索引 -> 暫存區域 待辦清單 準備區
+指令 git add .
+本地數據庫 -> 這是 Git 在你本地電腦上的一個隱藏資料夾（通常是 .git），裡面存放了所有提交的歷史版本。你可以把它想成你的專案歷史紀錄書。
+指令 git commit
+
+---
+Git 指令回顧
+新建本地數據庫：git init 
+新增一個檔案 index.html
+加入索引：git add .
+提交版本：git commit -m "填寫版本資訊"
+
+單一檔案加入索引：git add <檔案名稱>
+所有檔案加入索引：git add .B
+提交版本：git commit -m "填寫版本資訊"
+觀看當前狀態：git status
+瀏覽歷史紀錄：git log
+-----
+git push -u bit <url>
+數據庫不同的位置
+git push origin master
+origin 數據庫
+master 分支
+
+將本地數據庫推到遠端數據庫 git remote add <遠端數據庫簡稱> <url>
+
+註測自已的數據庫 git remote add origin 
+
+
+本地有數據庫，想將它推到 GitHub 
+加入遠端數據庫：git remote add <遠端數據庫簡稱> <url>
+git remote add origin https://github.com/gonsakon/emptyGitRepo.git
+在 git 遠端新增 origin遠端數據庫 ->第一次做就好
+git push -u origin master
+
+
+----
+gitignore 怎麼產生?
